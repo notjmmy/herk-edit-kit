@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "defaults": {
+    "maxCreditsPerJob": null,
+    "maxCreditsPerDay": null,
+    "maxCreditsPerMonth": null,
+    "allowUnmetered": false
+  },
+  "accounts": [
+    {
+      "alias": "replace-with-your-account-label",
+      "provider": "replace-with-supported-provider",
+      "approved": false,
+      "priority": 1,
+      "allowedModels": [],
+      "secretRef": "windows-credential-manager:replace-with-secret-name",
+      "maxCreditsPerJob": null,
+      "maxCreditsPerDay": null,
+      "maxCreditsPerMonth": null,
+      "notes": "Do not put API keys, passwords, or cookies in this file."
+    }
+  ]
+}

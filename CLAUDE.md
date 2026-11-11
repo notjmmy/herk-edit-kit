@@ -102,3 +102,18 @@ disabled; synthetic input must remain inside the virtual browser.
 For short-form edits, read `docs/SHORT-FORM.md` and `docs/EDITING-PLAYBOOK.md`
 (Nate's measured house style and lessons), and use the plan and footage
 validators. Structural checks supplement rendered video and audio review.
+
+
+For Jimmy's client advertisements, read `.claude/skills/jimmy-client-ad/SKILL.md`
+before planning. In Codex use `$jimmy-client-ad`; in Claude Code use
+`/jimmy-client-ad`. This is Jimmy's decision layer over the generic kit: it
+prioritizes client requirements, source-backed shot selection, exact scripts,
+safe-zone-aware captions, purposeful B-roll/motion/audio, hook variants,
+revision organization, and honest format claims. Keep this skill mirrored with
+`npm run sync:skills` after changes.
+
+For generation across multiple accounts, load `.claude/skills/generation-account-router/SKILL.md`
+and consult `docs/GENERATION-ACCOUNTS.json` if configured. The skill enforces
+approved-account routing, secret references, cost limits, and quota-only
+fallbacks. It does not connect browser-only accounts; each provider needs a
+supported API or connector before automatic switching can work.
